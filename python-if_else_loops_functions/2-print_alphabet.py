@@ -5,4 +5,4 @@ while i < 122:
     i = i+1
     result = result + chr(i)
 
-print(result, end="")
+print(result, end=f"")
