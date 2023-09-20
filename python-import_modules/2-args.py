@@ -15,7 +15,7 @@ def main():
         print("{} argument:".format(len_argv))
         print("{}: {}".format(len_argv, sys.argv[1]))
 
-    # wtf if there's more than 1 parameter
+    # wtd if there's more than 1 parameter
     elif len_argv > 1:
         print("{} arguments:".format(len_argv))
         arg_counter = 1
