@@ -1,19 +1,19 @@
 #!/usr/bin/python3
 import sys
 
-#declaring a variable that contains the number of parameters given
+# declaring a variable that contains the number of parameters given
 len_argv = len(sys.argv) - 1
 
-#wtd if there's 0 parametters
+# wtd if there's 0 parametters
 if len_argv == 0:
     print("{} arguments.".format(len_argv))
 
-#wtd if there's 1 parameter
+# wtd if there's 1 parameter
 elif len_argv == 1:
     print("{} argument:".format(len_argv))
     print("{}: {}".format(len_argv, sys.argv[1]))
 
-#wtf if there's more than 1 parameter
+# wtf if there's more than 1 parameter
 elif len_argv > 1:
     print("{} arguments:".format(len_argv))
     arg_counter = 1
