@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-import copy
 def square_matrix_simple(matrix=[]):
-    new_matrix = copy.deepcopy(matrix)
-    for sub in new_matrix:
-        for ele in range(len(sub)):
-            sub[ele] = sub[ele]**2
+    new_matrix = [[ele**2 for ele in sub] for sub in matrix]
     return new_matrix
