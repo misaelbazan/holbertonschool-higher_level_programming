@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 class Square:
+    """This class defines a square"""
+
     def __init__(self, size=0):
         """Initialize an Object of the Square class
         Args:
             self: 
-            size: 0 by default
+            size: 0 by default, must be an integer
         """
 
         if not isinstance(size, int):
