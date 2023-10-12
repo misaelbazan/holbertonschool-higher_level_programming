@@ -6,7 +6,11 @@ class Square:
     """This class builds an object from type(Square)"""
 
     def __init__(self, size=0):
-        """This function initializes a new object from Square class"""
+        """
+        This function initializes a new object from Square class
+        Args:
+            size: is the side longitude of the square obj"
+        """
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
