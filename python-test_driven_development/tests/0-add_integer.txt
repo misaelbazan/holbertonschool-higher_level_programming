@@ -1,0 +1,25 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Passing two integers, both positives
+>>> add_integer(1, 2)
+3
+
+# Passing two integers, one positive and one negative
+>>> add_integer(5, -1)
+4
+
+# Passing two integers, both negative
+>>> add_integer(-1, -1)
+-2
+
+# Passing two float, both positive
+>>> add_integer(5.5, 5.1)
+10
+
+# Passing two float, one negative and one positive
+>>> add_integer(5.5, -5.1)
+0
+
+# Parameters: int for a, None for b
+>>> add_integer(4)
+102
