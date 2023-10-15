@@ -6,15 +6,25 @@
 
 class Rectangle:
     def __init__(self, width=0, height=0):
+        """Initialize a new object from the Rectangle class
+        Args:
+            width: width of the rectangle
+            height: height of the rectangle
+        """
         self.__height = height
         self.__width = width
 
     @property
     def width(self):
+        """Returns the width value"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """Sets the width value
+        Args:
+            value: the width value to be set
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -23,10 +33,15 @@ class Rectangle:
 
     @property
     def height(self):
+        """Return the height value"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """Sets the height value
+        Args:
+            value: the height value to be set
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -34,12 +49,15 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """Returns the area of the rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
+        """Returns the perimeter of the rectangle"""
         return (self.__width + self.__height) * 2
 
     def __str__(self):
+        """Returns and string of #'s that draws the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return("")
         rectangle_str = ""
