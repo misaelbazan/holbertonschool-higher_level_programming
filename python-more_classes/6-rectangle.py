@@ -5,10 +5,9 @@
 
 
 class Rectangle:
-    """
-    This class defines a Rectangle Obj
-    """
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
+        Rectangle.number_of_instances += 1
         self.__height = height
         self.__width = width
 
@@ -35,3 +34,28 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        return self.__width * self.__height
+
+    def perimeter(self):
+        return (self.__width + self.__height) * 2
+
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return("")
+        rectangle_str = ""
+        for rows in range(self.__height):
+            for columns in range(self.__width):
+                rectangle_str += "#"
+            if rows < self.__height - 1:
+                rectangle_str += "\n"
+
+        return(rectangle_str)
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}({self.__width}, {self.__height})'
+
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -=1
