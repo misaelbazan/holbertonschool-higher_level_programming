@@ -8,8 +8,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize a new object from the Rectangle class
         Args:
-            width: width of the rectangle
-            height: height of the rectangle
+            width (int): width of the rectangle
+            height (int): height of the rectangle
         """
         self.__height = height
         self.__width = width
@@ -59,7 +59,7 @@ class Rectangle:
     def __str__(self):
         """Returns and string of #'s that draws the rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return("")
+            return ""
         rectangle_str = ""
         for rows in range(self.__height):
             for columns in range(self.__width):
