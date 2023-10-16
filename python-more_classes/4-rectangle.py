@@ -7,7 +7,8 @@
 class Rectangle:
     """
     This class defines a rectangle
-    Args: 
+
+    Args:
         width (int): width of the rectangle
         height (int): height of the rectangle
     """
@@ -44,8 +45,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Sets the height value from the outside
-        Args: 
+        """
+        Sets the height value from the outside
+
+        Args:
             value (int): value passed to be set as the height
         """
         if not isinstance(value, int):
