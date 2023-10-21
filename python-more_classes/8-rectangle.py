@@ -96,7 +96,7 @@ class Rectangle:
             area_1 = rect_1.area()
         else:
             raise TypeError("rect_1 must be an instance of Rectangle")
-        if isinstance(rect_2, Rectangle): 
+        if isinstance(rect_2, Rectangle):
             area_2 = rect_2.area()
         else:
             raise TypeError("rect_2 must be an instance of Rectangle")
