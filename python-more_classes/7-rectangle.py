@@ -9,6 +9,7 @@ class Rectangle:
     """
     number_of_instances = 0
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """Initialize a new object from the Rectangle class
         Args:
@@ -59,24 +60,24 @@ class Rectangle:
 
     def perimeter(self):
         """Returns the rectangle perimeter"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return (self.__width + self.__height) * 2
 
     def __str__(self):
         """Returns a string that contains a rectangle of #'s"""
         if self.__width == 0 or self.__height == 0:
-            return("")
-        if isinstance(Rectangle.print_symbol, list):
-            symbol_str = "\n".join(["".join(map(str, Rectangle.print_symbol)) \
-                * self.__width for rows in range(self.__height)])
-
+            return ""
         else:
-            symbol_str = "\n".join([str(Rectangle.print_symbol) * self.__width \
-                    for rows in range(self.__height)])
-        return symbol_str
+            a = self.__height + 1
+            b = self.__width
+            str_repr = ''.join(
+                    [f"{str(self.print_symbol) * b}\n" for i in range(a) if i])
+            return str_repr[:len(str_repr) - 1]
 
     def __repr__(self):
         """Returns a Rectangle class string representation"""
-        return f'{self.__class__.__name__}({self.__width}, {self.__height})'
+        return f'{__class__.__name__}({self.__width}, {self.__height})'
 
     def __del__(self):
         """Prints a message each time a rectangle object is deleted
