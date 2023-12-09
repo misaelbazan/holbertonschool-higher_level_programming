@@ -5,6 +5,3 @@ SET score = CASE
 	WHEN score > 10 THEN 10
 	ELSE score
 	END;
-
-SELECT score, name FROM second_table
-ORDER BY score DESC;
