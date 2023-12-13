@@ -4,7 +4,7 @@
 --  state_id INT, can't be NULL and must be a FK that references to 'id'
 --  name VARCHAR(256) can't be NULL
 -- if 'hbtn_0d_usa' already exists, the script should not fail
--- id 'cities' already exists, the scriot should not fail
+-- id 'cities' already exists, the scriot should not fa
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 USE hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS cities (
