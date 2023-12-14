@@ -1,18 +1,21 @@
-""" list all 'states' from the bhbtn_d_usa DB
-    this script should take 3 arguments:
-	-- ysql username
-	-- mysql password
-	-- database name (no argument validation needed)
-    you must use the Module 'MySQLdb' (import)
-    the script should connect to a MySQL server running on localhost
-    at port '3306'
-    Results must be sorted in ASC order by states.id
-    The code should not be executed when imported
+#!/usr/bin/python3
+
+"""
+list all 'states' from the bhbtn_d_usa DB this script should take 3 arguments:
+    -- ysql username
+    -- mysql password
+    -- database name (no argument validation needed)
+you must use the Module 'MySQLdb' (import)
+the script should connect to a MySQL server running on localhost
+at port '3306'
+Results must be sorted in ASC order by states.id
+The code should not be executed when imported
 """
 
 
 import sys
 import MySQLdb
+
 
 username = sys.argv[1]
 password = sys.argv[2]
