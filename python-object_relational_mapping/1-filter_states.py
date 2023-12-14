@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-list all 'states' from the hbtn_0e_0_usa DB this script should take 3 arguments:
+List all 'states' from hbtn_0e_0_usa
+- This script should take 3 arguments:
     -- ysql username
     -- mysql password
     -- database name (no argument validation needed)
