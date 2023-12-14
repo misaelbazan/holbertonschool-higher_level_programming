@@ -30,7 +30,7 @@ if __name__ == "__main__":
         )
     cur = db.cursor()
     # Describe the query
-    query = "SELECT * FROM {} WHERE {} = '{}' ORDER BY id ASC"\
+    query = "SELECT * FROM {} WHERE {} LIKE BINARY '{}' ORDER BY id ASC"\
             .format("states", "name", sys.argv[4])
 
     # Execute the query
