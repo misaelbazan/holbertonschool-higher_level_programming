@@ -33,7 +33,7 @@ if __name__ == "__main__":
         )
     cur = db.cursor()
     # Execute the query
-    cur.execute("SELECT * FROM states ORDER BY states.id")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
     # Fetch all the rows
     rows = cur.fetchall()
     for row in rows:
