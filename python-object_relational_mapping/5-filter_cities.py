@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-Script that takes in the name of a state as an argument and lists all cities of that state
+Script that takes in the name of a state as an argument and lists\
+        all cities of that state
 The script should take 4 arguments:
     --  mysql username
     --  mysql passwd
@@ -37,7 +38,7 @@ if __name__ == "__main__":
     words = [each_tpl[0] for each_tpl in result_tuple]
     result_string = ', '.join(words)
     print(result_string)
-        
+
     # Close the cursos and the connection
     cur.close()
     db.close()
