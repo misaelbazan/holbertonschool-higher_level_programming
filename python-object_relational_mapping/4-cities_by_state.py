@@ -2,7 +2,8 @@
 
 
 """script that lists all cities from hbtn_0d_4_usa:
-    --  the script should take 3 arguments: mysql username, mysql passwd, database
+    --  the script should take 3 arguments:
+        mysql username, mysql passwd database
     --  the MySQLdb module must be used (import MySQLdb)
     --  the script should connect toa MySQL server running on:
         host:'localhost'
@@ -33,7 +34,7 @@ if __name__ == "__main__":
             ORDER BY cities.id"
     cur.execute(query)
     query_rows = cur.fetchall()
-    
+
     for row in query_rows:
         print(row)
 
