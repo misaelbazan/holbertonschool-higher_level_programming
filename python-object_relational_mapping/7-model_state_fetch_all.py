@@ -22,3 +22,5 @@ if __name__ == "__main__":
 
     for state in States:
         print("{}: {}".format(state.id, state.name))
+
+    session.close()
