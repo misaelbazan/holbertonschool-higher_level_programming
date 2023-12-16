@@ -10,7 +10,7 @@ from sqlalchemy import create_engine
 if __name__ == "__main__":
 
     session_crdt = "mysql+mysqldb://{}:{}@localhost/{}".format(
-            sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3])
+            sys.argv[1], sys.argv[2], sys.argv[3])
     engine = create_engine(session_crdt, pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
@@ -20,11 +20,10 @@ if __name__ == "__main__":
     session = Session()
     """Extract a sessioni"""
 
-    States = session.query(State).order_by(State.id).all()
+    states = session.query(State).order_by(State.id).all()
 
     # Print all states
-    for state in States:
+    for state in states:
         print("{}: {}".format(state.id, state.name))
-
-    
+ 
     session.close()
