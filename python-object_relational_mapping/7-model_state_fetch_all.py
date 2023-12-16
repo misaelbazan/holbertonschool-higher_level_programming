@@ -21,7 +21,10 @@ if __name__ == "__main__":
     """Extract a sessioni"""
 
     States = session.query(State).order_by(State.id).all()
+
+    # Print all states
     for state in States:
         print("{}: {}".format(state.id, state.name))
 
+    
     session.close()
