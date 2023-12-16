@@ -12,9 +12,11 @@ if __name__ == "__main__":
     session_crdt = "mysql+mysqldb://{}:{}@localhost/{}".format(
             sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3])
     engine = create_engine(session_crdt, pool_pre_ping=True)
-    Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
+
+    Base.metadata.create_all(engine)
+
     session = Session()
     """Extract a sessioni"""
 
