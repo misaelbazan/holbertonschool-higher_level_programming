@@ -18,8 +18,7 @@ if __name__ == "__main__":
     session = Session()
     """Extract a sessioni"""
 
-    States = session.query(State).all()
-
+    States = session.query(State).order_by(State.id).all()
     for state in States:
         print("{}: {}".format(state.id, state.name))
 
