@@ -1,0 +1,36 @@
+How to import:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Regular usage tests:
+
+>>> text_indentation("Misael Bazán")
+Misael Bazán
+
+>>> text_indentation("Misael.Bazán: are you ready?")
+Misael
+<BLANKLINE>
+Bazán
+<BLANKLINE>
+are you ready?
+<BLANKLINE>
+
+>>> text_indentation("")
+
+>>> text_indentation("...")
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+
+>>> text_indentation()
+Traceback (most recent call last):
+	...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+	...
+TypeError: text must be a string
