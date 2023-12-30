@@ -11,7 +11,7 @@ def text_indentation(text):
     result = ""
     if not isinstance(text, str) or isinstance(text, int):
         raise TypeError("text must be a string")
-    if type(text) == str:
+    else:
         for char in text:
             result += char
             if char in chars:
