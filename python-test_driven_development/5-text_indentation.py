@@ -17,4 +17,5 @@ def text_indentation(text):
             result += "\n\n"
     bresult = [line.lstrip() for line in result.split('\n')]
     formated_txt = '\n'.join(bresult)
-    print(formated_txt)
+
+    print(formated_txt, end="")
