@@ -4,13 +4,13 @@ How to import:
 
 Regular usage tests:
 
->>> text_indentation("Misael Bazán")
-Misael Bazán
+>>> text_indentation("Misael Bazan")
+Misael Bazan
 
->>> text_indentation("Misael.Bazán: are you ready?")
+>>> text_indentation("Misael.Bazan: are you ready?")
 Misael
 <BLANKLINE>
-Bazán
+Bazan:
 <BLANKLINE>
 are you ready?
 <BLANKLINE>
