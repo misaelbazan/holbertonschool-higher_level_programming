@@ -8,7 +8,7 @@ Regular usage tests:
 Misael Bazan
 
 >>> text_indentation("Misael.Bazan: are you ready?")
-Misael
+Misael.
 <BLANKLINE>
 Bazan:
 <BLANKLINE>

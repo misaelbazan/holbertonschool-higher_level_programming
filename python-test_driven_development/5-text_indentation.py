@@ -9,7 +9,7 @@ def text_indentation(text):
     text = " ".join(text.split())
     chars = [".", "?", ":"]
     result = ""
-    if not isinstance(text, str):
+    if not isinstance(text, str) or isinstance(text, int):
         raise TypeError("text must be a string")
     if type(text) == str:
         for char in text:
